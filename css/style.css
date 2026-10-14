@@ -345,5 +345,7 @@ a.contact-link-card:hover { border-color: #ffad88; background: rgba(255,255,255,
   .diagram-node strong { font-size: 9px; }
   .diagram-node small { font-size: 7px; }
   .diagram-arrow { font-size: 13px; }
-  .diagram-flow-pipeline .diagram-node { flex-basis: 38%; }
+  .diagram-flow-pipeline { flex-direction: column; align-items: stretch; }
+  .diagram-flow-pipeline .diagram-node { flex-basis: auto; }
+  .diagram-flow-pipeline .diagram-arrow { transform: rotate(90deg); align-self: center; }
 }
