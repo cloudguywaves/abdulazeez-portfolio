@@ -170,6 +170,16 @@
           <article class="case-study-card">
             <div class="case-study-top"><span class="case-study-number">02</span><span class="case-study-category">LEAD RESPONSE AUTOMATION</span></div>
             <h3>n8n Speed-to-Lead Workflow</h3>
+            <div class="case-diagram" role="img" aria-label="Lead form or CRM sends a lead into n8n for workflow processing, then the lead is routed into the CRM">
+              <span class="diagram-label">WORKFLOW OVERVIEW</span>
+              <div class="diagram-flow">
+                <div class="diagram-node"><strong>Lead form / CRM</strong><small>New lead</small></div>
+                <span class="diagram-arrow" aria-hidden="true">→</span>
+                <div class="diagram-node diagram-node-primary"><strong>n8n</strong><small>Process &amp; route</small></div>
+                <span class="diagram-arrow" aria-hidden="true">→</span>
+                <div class="diagram-node"><strong>CRM</strong><small>Lead destination</small></div>
+              </div>
+            </div>
             <div class="case-study-block"><h4>The challenge</h4><p>New leads need to reach the right CRM destination quickly, with follow-up steps handled consistently rather than relying entirely on manual action.</p></div>
             <div class="case-study-block"><h4>My approach</h4><p>Worked with an n8n workflow for lead routing into a CRM and follow-up messaging. For troubleshooting, I review execution history and failed nodes, resolve routine workflow issues, and escalate credential, permission, or higher-risk changes.</p></div>
             <div class="case-study-outcome"><span>Delivery focus</span><strong>Reliable routing and follow-up</strong><p>Designed around workflow visibility, practical troubleshooting, and safe escalation.</p></div>
@@ -186,13 +196,43 @@
           <article class="case-study-card">
             <div class="case-study-top"><span class="case-study-number">04</span><span class="case-study-category">ENGINEERING WORKFLOW INTEGRATION</span></div>
             <h3>Azure DevOps–Slack Notifications</h3>
+            <div class="case-diagram" role="img" aria-label="Azure DevOps activity triggers a service hook which sends notifications to a shared Slack channel">
+              <span class="diagram-label">INTEGRATION FLOW</span>
+              <div class="diagram-flow">
+                <div class="diagram-node"><strong>Azure DevOps</strong><small>Engineering events</small></div>
+                <span class="diagram-arrow" aria-hidden="true">→</span>
+                <div class="diagram-node diagram-node-primary"><strong>Service Hooks</strong><small>Event trigger</small></div>
+                <span class="diagram-arrow" aria-hidden="true">→</span>
+                <div class="diagram-node"><strong>Slack</strong><small>Shared channel</small></div>
+              </div>
+            </div>
             <div class="case-study-block"><h4>The challenge</h4><p>Engineering updates across repositories, pull requests, builds, releases, and work items required team members to check Azure DevOps manually.</p></div>
             <div class="case-study-block"><h4>My approach</h4><p>Designed and implemented an integration using Azure DevOps service hooks to send notifications to a shared Slack channel for code pushes, pull requests, build status, release or deployment updates, and work-item changes.</p></div>
             <div class="case-study-outcome"><span>Observed outcome</span><strong>Less manual checking</strong><p>Used in a live engineering workflow to give the team a shared place to see relevant updates. No unverified time-saving figure is claimed.</p></div>
             <div class="project-tags"><span>Azure DevOps</span><span>Service Hooks</span><span>Slack</span><span>Notifications</span></div>
           </article>
+          <article class="case-study-card">
+            <div class="case-study-top"><span class="case-study-number">05</span><span class="case-study-category">CLOUD DEVOPS</span></div>
+            <h3>Azure DevOps Pipeline Implementation</h3>
+            <div class="case-study-block"><h4>The challenge</h4><p>Software delivery workflows can involve repetitive manual steps and make it harder to review the status of pipeline runs in one place.</p></div>
+            <div class="case-study-block"><h4>My approach</h4><p>Designed and implemented an Azure DevOps pipeline workflow to structure software delivery around pipeline execution. The diagram below illustrates a general pipeline flow; exact stages depend on the project configuration.</p></div>
+            <div class="case-diagram" role="img" aria-label="Illustrative pipeline flow from source repository to pipeline trigger, build and validation, and pipeline result">
+              <span class="diagram-label">PIPELINE FLOW · ILLUSTRATIVE</span>
+              <div class="diagram-flow diagram-flow-pipeline">
+                <div class="diagram-node"><strong>Source</strong><small>Code repository</small></div>
+                <span class="diagram-arrow" aria-hidden="true">→</span>
+                <div class="diagram-node"><strong>Pipeline</strong><small>Run trigger</small></div>
+                <span class="diagram-arrow" aria-hidden="true">→</span>
+                <div class="diagram-node diagram-node-primary"><strong>Build / validate</strong><small>Configured steps</small></div>
+                <span class="diagram-arrow" aria-hidden="true">→</span>
+                <div class="diagram-node"><strong>Result</strong><small>Run status</small></div>
+              </div>
+            </div>
+            <div class="case-study-outcome"><span>Delivery focus</span><strong>Structured pipeline execution</strong><p>Supports a more organized and reviewable delivery workflow. No production deployment or quantified time saving is claimed.</p></div>
+            <div class="project-tags"><span>Azure DevOps</span><span>Azure Pipelines</span><span>CI/CD</span><span>Delivery automation</span></div>
+          </article>
         </div>
-        <p class="project-note">These case studies summarize work and responsibilities from my professional experience. Only the 40% manual-workload reduction above is presented as a measured result; other benefits are described qualitatively where no verified metric is available.</p>
+        <p class="project-note">These case studies summarize work and responsibilities from my professional experience. The 40% manual-workload reduction is the only quantified result presented. Diagrams are illustrative workflow summaries, not screenshots of the underlying configuration.</p>
       </div>
     </section>
 
