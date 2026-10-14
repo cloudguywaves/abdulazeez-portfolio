@@ -324,3 +324,26 @@ a.contact-link-card:hover { border-color: #ffad88; background: rgba(255,255,255,
 @media (max-width: 1000px) { .case-study-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 620px) { .case-study-grid { grid-template-columns: 1fr; } .case-study-card { padding: 22px; } }
 
+
+
+/* Accessible, responsive case-study workflow diagrams */
+.case-diagram { margin: 0 0 18px; padding: 14px; border: 1px solid #e5e8ef; border-radius: 12px; background: #f8f9fc; }
+.diagram-label { display: block; margin-bottom: 11px; color: #697487; font-size: 8px; font-weight: 800; letter-spacing: .13em; }
+.diagram-flow { display: flex; align-items: stretch; justify-content: center; gap: 7px; }
+.diagram-node { display: flex; flex: 1 1 0; min-width: 0; flex-direction: column; justify-content: center; padding: 11px 8px; border: 1px solid #dfe4ee; border-radius: 8px; background: #fff; text-align: center; }
+.diagram-node strong { color: var(--ink); font-size: 10px; line-height: 1.35; overflow-wrap: anywhere; }
+.diagram-node small { margin-top: 4px; color: #697487; font-size: 8px; line-height: 1.4; }
+.diagram-node-primary { border-color: #bdcafa; background: #edf1ff; }
+.diagram-node-primary strong { color: var(--blue); }
+.diagram-arrow { align-self: center; color: var(--orange); font-size: 16px; font-weight: 800; }
+.diagram-flow-pipeline { flex-wrap: wrap; }
+.diagram-flow-pipeline .diagram-node { flex-basis: 19%; }
+@media (max-width: 620px) {
+  .case-diagram { padding: 11px; }
+  .diagram-flow { gap: 5px; }
+  .diagram-node { padding: 9px 5px; }
+  .diagram-node strong { font-size: 9px; }
+  .diagram-node small { font-size: 7px; }
+  .diagram-arrow { font-size: 13px; }
+  .diagram-flow-pipeline .diagram-node { flex-basis: 38%; }
+}
